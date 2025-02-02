@@ -25,7 +25,13 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-
+  <style>
+    @media (max-width: 768px) {
+      .blog-item {
+        flex: 1 1 100% !important;
+      }
+    }
+  </style>
 
 </head>
 
@@ -393,6 +399,34 @@
 
       </div>
     </section><!-- #call-to-action -->
+    <section id="blog" class="wow fadeInUp mt-2" style="padding: 20px 0;">
+      <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+          <h2 style="font-size: 2.5em; margin-bottom: 20px;">Our Blog</h2>
+          <p style="font-size: 1.2em; color: #777;">Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+        </div>
+    
+        <div class="blog-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+          <div class="blog-item" style="flex: 1 1 calc(33.333% - 20px); box-sizing: border-box; margin: 10px; text-align: center;">
+            <img src="img/intro-carousel/1.jpg" alt="Blog 1" style="max-width: 100%; height: auto; border-radius: 10px;">
+            <h3 style="margin-top: 15px; font-size: 1.5em;">Blog Post 1</h3>
+            <p style="font-size: 1em; color: #777;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at quam id libero suscipit tincidunt.</p>
+          </div>
+          <div class="blog-item" style="flex: 1 1 calc(33.333% - 20px); box-sizing: border-box; margin: 10px; text-align: center;">
+            <img src="img/intro-carousel/4.jpg" alt="Blog 2" style="max-width: 100%; height: auto; border-radius: 10px;">
+            <h3 style="margin-top: 15px; font-size: 1.5em;">Blog Post 2</h3>
+            <p style="font-size: 1em; color: #777;">Nullam vehicula, justo at facilisis fermentum, urna ligula bibendum nulla, a tincidunt libero erat a justo.</p>
+          </div>
+          <div class="blog-item" style="flex: 1 1 calc(33.333% - 20px); box-sizing: border-box; margin: 10px; text-align: center;">
+            <img src="img/intro-carousel/2.jpg" alt="Blog 3" style="max-width: 100%; height: auto; border-radius: 10px;">
+            <h3 style="margin-top: 15px; font-size: 1.5em;">Blog Post 3</h3>
+            <p style="font-size: 1em; color: #777;">Praesent nec nisl a purus blandit viverra. Suspendisse potenti. Sed tincidunt, urna ut vehicula.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- #blog -->
+    
+   
 
    
     <!--==========================
@@ -466,20 +500,6 @@
 
       </div>
     </section><!-- #contact -->
-
-    <section id="blog" class="wow fadeInUp">
-      <div class="container">
-       
-        <div class="owl-carousel testimonials-carousel">
-
-            
-
-          
-
-        </div>
-
-      </div>
-    </section>
 
   </main>
 
