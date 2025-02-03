@@ -1,14 +1,14 @@
-name: CI - Development # Updated this line from 'code name'
+name: CI - Development  # Updated this line from 'code name'
 
 on:
   push:
     branches:
-      - develop # Runs on push to the 'develop' branch
+      - develop  # Runs on push to the 'develop' branch
   pull_request:
     branches:
-      - develop # Runs on pull request to the 'develop' branch
+      - develop  # Runs on pull request to the 'develop' branch
     paths:
-      - "feature/*" # Only for PRs related to 'feature/*' paths
+      - "feature/*"  # Only for PRs related to 'feature/*' paths
 
 permissions:
   contents: read
@@ -44,7 +44,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
-        uses: actions/upload-artifact@v2 # Updated to v2
+        uses: actions/upload-artifact@v3  # Updated to v3
         with:
           path: "."
       - name: Deploy to GitHub Pages
