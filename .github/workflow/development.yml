@@ -1,0 +1,22 @@
+name: CI - Development
+
+on:
+  pull_request:
+    branches:
+      - develop
+    paths:
+      - 'feature/*'
+
+jobs:
+  linting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Linting
+        run: npm run lint
