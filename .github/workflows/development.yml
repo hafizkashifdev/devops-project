@@ -1,14 +1,14 @@
-code name: CI - Development
+name: CI - Development # Updated this line from 'code name'
 
 on:
   push:
     branches:
-      - develop
+      - develop # Runs on push to the 'develop' branch
   pull_request:
     branches:
-      - develop
+      - develop # Runs on pull request to the 'develop' branch
     paths:
-      - "feature/*"
+      - "feature/*" # Only for PRs related to 'feature/*' paths
 
 permissions:
   contents: read
