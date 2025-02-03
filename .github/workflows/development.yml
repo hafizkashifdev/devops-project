@@ -30,6 +30,8 @@ jobs:
           node-version: "18"
       - name: Install Dependencies
         run: npm install
+      - name: Set execute permissions for eslint
+        run: chmod +x ./node_modules/.bin/eslint
       - name: Run Linting
         run: npm run lint
 
